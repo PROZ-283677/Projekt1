@@ -6,7 +6,7 @@ import javafx.collections.ObservableList;
 /**************************
  * Baza danych, PROZ
  * @author Kacper Klimczuk 
- * @version v4
+ * @version v5
  **************************/
 public class DataBase {
 	// imitacja bazy danych uzytkownikow
@@ -54,21 +54,21 @@ public class DataBase {
 	/**
 	 * @return nazwy uzytkownikow srodowiska: produkcyjne
 	 */
-	public ObservableList<String> getprodukcyjne() {
+	public ObservableList<String> getProdukcyjne() {
 		return produkcyjne;
 	}
 	
 	/**
 	 * @return nazwy uzytkownikow srodowiska: testowe
 	 */
-	public ObservableList<String> gettestowe() {
+	public ObservableList<String> getTestowe() {
 		return testowe;
 	}
 	
 	/**
 	 * @return nazwy uzytkownikow srodowiska: developerskie
 	 */
-	public ObservableList<String> getdeweloperskie() {
+	public ObservableList<String> getDeweloperskie() {
 		return deweloperskie;
 	}
 }

@@ -16,7 +16,7 @@ import javafx.util.Pair;
  * Okienko logowania, PROZ
  * 
  * @author Kacper Klimczuk
- * @version v4
+ * @version v5
  **************************/
 public class LogonDialog {
 
@@ -58,11 +58,11 @@ public class LogonDialog {
 
 		choiceBox.getSelectionModel().selectedItemProperty().addListener((observable, oldVal, newVal) -> {
 			if (choiceBox.getValue() == "Produkcyjne")
-				comboBox.setItems(db.getprodukcyjne());
+				comboBox.setItems(db.getProdukcyjne());
 			else if (choiceBox.getValue() == "Testowe")
-				comboBox.setItems(db.gettestowe());
+				comboBox.setItems(db.getTestowe());
 			else
-				comboBox.setItems(db.getdeweloperskie());
+				comboBox.setItems(db.getDeweloperskie());
 		});
 	}
 
@@ -119,7 +119,7 @@ public class LogonDialog {
 		grid.add(new Label("Środowisko:"), 0, 0);
 		grid.add(choiceBox, 1, 0);
 
-		comboBox.setItems(db.getprodukcyjne());
+		comboBox.setItems(db.getProdukcyjne());
 		comboBox.setEditable(true);
 		comboBox.getEditor().textProperty().addListener((observable, oldVal, newVal) -> changed());
 		comboBox.setValue("adam.nowak");

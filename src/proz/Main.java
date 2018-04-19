@@ -8,7 +8,7 @@ import javafx.util.Pair;
  * Klasa Main, PROZ
  * 
  * @author Kacper Klimczuk
- * @version v4
+ * @version v5
  **************************/
 public class Main extends Application {
 
